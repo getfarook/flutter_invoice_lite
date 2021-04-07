@@ -36,10 +36,14 @@ class _CustomerEntryState extends State<CustomerEntry> {
                   width: 100,
                   height: 40,
                   child: TextField(
-                      decoration: InputDecoration(
-                          border: OutlineInputBorder(
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(15))))),
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(15),
+                        ),
+                      ),
+                    ),
+                  ),
                 ),
               ],
             ),
@@ -50,10 +54,14 @@ class _CustomerEntryState extends State<CustomerEntry> {
                   width: 100,
                   height: 40,
                   child: TextField(
-                      decoration: InputDecoration(
-                          border: OutlineInputBorder(
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(15))))),
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(15),
+                        ),
+                      ),
+                    ),
+                  ),
                 ),
               ],
             ),
@@ -114,9 +122,10 @@ class _CustomerEntryState extends State<CustomerEntry> {
           width: 250,
           height: 100,
           decoration: BoxDecoration(
-              color: Colors.grey[300],
-              border: Border.all(width: 1, color: Colors.grey),
-              borderRadius: BorderRadius.circular(15)),
+            color: Colors.grey[300],
+            border: Border.all(width: 1, color: Colors.grey),
+            borderRadius: BorderRadius.circular(15),
+          ),
           child: Center(
             child: Text(
               cuaddress,

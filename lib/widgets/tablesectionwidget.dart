@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'addlinerow.dart';
 
 class TableSection extends StatefulWidget {
   @override
@@ -38,7 +39,16 @@ class _TableSectionState extends State<TableSection> {
             container('PRICE', 80),
             container('AMOUNT', 90)
           ],
-        )
+        ),
+        Row(
+          children: [
+            container('ITEM', 150),
+            container('QTY', 50),
+            container('PRICE', 80),
+            container('AMOUNT', 90)
+          ],
+        ),
+        AddLineRow()
         //ListView.builder(itemCount: 1, itemBuilder: (ctx, i) => )
       ],
     );
